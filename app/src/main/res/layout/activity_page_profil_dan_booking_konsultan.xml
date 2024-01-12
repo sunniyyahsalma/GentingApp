@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageProfilDanBookingKonsultan"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top_daftar_konsultan"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/genting_daftar_konsultan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo_type" />
+
+        <ImageView
+            android:id="@+id/menu_daftar_konsultan"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/strip_menu" />
+
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/top_daftar_konsultan"
+       android:layout_marginTop="20dp"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <FrameLayout
+               android:id="@+id/identity_konsultan"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/top_daftar_konsultan">
+
+               <ImageView
+                   android:id="@+id/pp_profilpage"
+                   android:layout_width="130dp"
+                   android:layout_height="130dp"
+                   android:layout_marginStart="40dp"
+                   android:layout_marginTop="30dp"
+                   android:src="@drawable/profile_picture_konsultan"/>
+
+               <TextView
+                   android:id="@+id/nama_profilpage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins_medium"
+                   android:paddingStart="195dp"
+                   android:paddingTop="60dp"
+                   android:text="dr. Evlyn Rogger"
+                   android:textSize="19sp"
+                   android:textColor="@color/black" />
+
+               <TextView
+                   android:id="@+id/profesi_profilpage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="12sp"
+                   android:paddingStart="195dp"
+                   android:paddingTop="90dp"
+                   android:text="Nutrition Specialist" />
+
+               <ImageView
+                   android:id="@+id/icon_hospital_profilpage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/hospital"
+                   android:paddingStart="195dp"
+                   android:paddingTop="128dp"/>
+
+               <TextView
+                   android:id="@+id/nama_rs_profilpage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins"
+                   android:textSize="14sp"
+                   android:textColor="@color/black"
+                   android:paddingStart="220dp"
+                   android:paddingTop="127dp"
+                   android:text="AYSHA Hospital" />
+
+               <ImageView
+                   android:id="@+id/icon_medcheck"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginStart="50dp"
+                   android:layout_marginTop="185dp"
+                   android:src="@drawable/medical_checkup"
+                   />
+
+               <TextView
+                   android:id="@+id/jmlh_medcheck"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins"
+                   android:textColor="#201F1F"
+                   android:layout_marginTop="189dp"
+                   android:layout_marginStart="80dp"
+                   android:textSize="13sp"
+                   android:text="126 Konsultasi"
+                   />
+
+               <ImageView
+                   android:id="@+id/icon_pengalaman"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginStart="190dp"
+                   android:layout_marginTop="185dp"
+                   android:src="@drawable/healthcare"
+                   />
+
+               <TextView
+                   android:id="@+id/jmlh_pengalaman"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins"
+                   android:textColor="#201F1F"
+                   android:layout_marginTop="189dp"
+                   android:layout_marginStart="223dp"
+                   android:textSize="13sp"
+                   android:text="7 Years"
+                   />
+
+               <ImageView
+                   android:id="@+id/icon_rating"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginStart="289dp"
+                   android:layout_marginTop="185dp"
+                   android:src="@drawable/star_filled"/>
+
+               <TextView
+                   android:id="@+id/jmlh_rating"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins"
+                   android:textColor="#201F1F"
+                   android:layout_marginTop="189dp"
+                   android:layout_marginStart="320dp"
+                   android:textSize="13sp"
+                   android:text="4,5"
+                   />
+
+           </FrameLayout>
+
+           <FrameLayout
+               android:id="@+id/about_konsultan"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/identity_konsultan">
+
+               <TextView
+                   android:id="@+id/text_about_konsultan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins_medium"
+                   android:paddingStart="50dp"
+                   android:paddingTop="10dp"
+                   android:text="About Consultant"
+                   android:textSize="19sp"
+                   android:textColor="@color/black"/>
+
+               <TextView
+                   android:id="@+id/desc_konsultan"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins"
+                   android:paddingStart="50dp"
+                   android:paddingTop="45dp"
+                   android:paddingEnd="50dp"
+                   android:textSize="13sp"
+                   android:textColor="@color/black"
+                   android:justificationMode="inter_word"
+                   android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                   />
+
+           </FrameLayout>
+
+
+       </LinearLayout>
+   </ScrollView>
+
+    <Button
+        android:id="@+id/book_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/rectangle_bottom_button"
+        android:text="Book Now"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

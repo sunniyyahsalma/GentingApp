@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/text_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:text="Payment"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="25dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/detail_orded_konsultasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_payment"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/rectangle_list_konsultan">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:text="Detail Order"/>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#1E1D1D"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Date"/>
+
+        <TextView
+            android:id="@+id/date_consultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:text="Sabtu, 13 Januari 2023"
+            android:textColor="#1E1D1D" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#1E1D1D"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:text="Time"/>
+
+        <TextView
+            android:id="@+id/time_consultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:text="12.00 WIB"
+            android:textColor="#1E1D1D" />
+
+        <TextView
+            android:id="@+id/total_konsultasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#1E1D1D"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:text="Total"/>
+
+        <TextView
+            android:id="@+id/totalbayar_consultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:text="Rp. 45.000"
+            android:textColor="#1E1D1D" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/pilih_metode_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/detail_orded_konsultasi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:text="Pilih metode pembayaran"
+        />
+
+    <FrameLayout
+        android:id="@+id/credit_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pilih_metode_payment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/rectangle_payment"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/credit_card"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit card"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="65dp"/>
+
+        <RadioButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="260dp"
+            android:layout_gravity="center_vertical"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/qris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/credit_card"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/rectangle_payment"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qris"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QRIS"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="65dp"/>
+
+        <RadioButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="260dp"
+            android:layout_gravity="center_vertical"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/qris"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/rectangle_payment"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mobile_bca"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BCA Virtual Account"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="65dp"/>
+
+        <RadioButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="260dp"
+            android:layout_gravity="center_vertical"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mandiri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bca"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/rectangle_payment"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/mobile_mandiri"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mandiri Virtual Account"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="65dp"/>
+
+        <RadioButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="260dp"
+            android:layout_gravity="center_vertical"/>
+
+    </FrameLayout>
+
+
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bottom_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginHorizontal="70dp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:text="Confirm Payment"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+
+    <RadioGroup
+        android:id="@+id/opsi_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pilih_metode_payment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="50dp">
+
+
+        <RadioButton
+            android:id="@+id/card_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_payment"
+            android:textAlignment="gravity"
+            android:text="Card Credit"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/credit_card"/>
+
+
+
+        <RadioButton
+            android:id="@+id/qris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_payment"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:text="QRIS"
+            />
+
+        <RadioButton
+            android:id="@+id/bca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_payment"
+            android:textAlignment="gravity"
+            android:layout_marginTop="10dp"
+            android:text="BCA Virtual Account"
+            />
+
+    </RadioGroup>
+
+
+<RadioGroup
+            android:id="@+id/opsi_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Credit"
+                />
+        </RadioGroup>
+
+-->

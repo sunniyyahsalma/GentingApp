@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#8AC6D1">
+
+    <ImageView
+        android:id="@+id/icon_payment_confirm"
+        android:layout_width="265dp"
+        android:layout_height="279dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/payment_confirm" />
+
+
+    <TextView
+        android:id="@+id/text_thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:paddingHorizontal="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins"
+        android:text="Thank You"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/desc_thankyou"/>
+
+    <TextView
+        android:id="@+id/desc_thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:paddingHorizontal="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_light"
+        android:text="Your trust and support are very valuable to us.
+We believe that with the cooperation of various parties, we can overcome stunting and create a healthy and smart generation of Indonesians."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageDaftarKonsultan"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top_daftar_konsultan"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/genting_daftar_konsultan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo_type" />
+
+        <ImageView
+            android:id="@+id/menu_daftar_konsultan"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/strip_menu" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_daftar_konsultan"
+        android:layout_marginTop="80dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/profile_konsultan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top_daftar_konsultan"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@drawable/rectangle_list_konsultan">
+
+                    <ImageView
+                        android:id="@+id/pp_konsultan"
+                        android:layout_width="102dp"
+                        android:layout_height="108dp"
+                        android:paddingHorizontal="7dp"
+                        android:src="@drawable/profile_picture_konsultan" />
+
+                    <TextView
+                        android:id="@+id/nama_konsultan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="120dp"
+                        android:paddingTop="20sp"
+                        android:text="dr. Evlyn Rogger"
+                        android:textSize="16dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nama_profesi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:paddingStart="120dp"
+                        android:paddingTop="43dp"
+                        android:text="Nutrition Specialist" />
+
+                    <ImageView
+                        android:id="@+id/icon_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospital"
+                        android:paddingStart="120dp"
+                        android:paddingTop="78dp"/>
+
+                    <TextView
+                        android:id="@+id/nama_rs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="143dp"
+                        android:paddingTop="77dp"
+                        android:text="AYSHA Hospital" />
+
+                    <ImageView
+                        android:id="@+id/status_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/available"
+                        android:paddingStart="260dp"
+                        android:paddingTop="74dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/profile_konsultan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_konsultan"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@drawable/rectangle_list_konsultan">
+
+                    <ImageView
+                        android:id="@+id/pp_konsultan1"
+                        android:layout_width="102dp"
+                        android:layout_height="108dp"
+                        android:paddingHorizontal="7dp"
+                        android:src="@drawable/profile_picture_konsultan" />
+
+                    <TextView
+                        android:id="@+id/nama_konsultan1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="120dp"
+                        android:paddingTop="20dp"
+                        android:text="dr. Evlyn Rogger"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nama_profesi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:paddingStart="120dp"
+                        android:paddingTop="43dp"
+                        android:text="Nutrition Specialist" />
+
+                    <ImageView
+                        android:id="@+id/icon_hospital1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospital"
+                        android:paddingStart="120dp"
+                        android:paddingTop="78dp"/>
+
+                    <TextView
+                        android:id="@+id/nama_rs1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="143dp"
+                        android:paddingTop="77dp"
+                        android:text="AYSHA Hospital" />
+
+                    <ImageView
+                        android:id="@+id/status_available1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/available"
+                        android:paddingStart="260dp"
+                        android:paddingTop="74dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/profile_konsultan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_konsultan1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@drawable/rectangle_list_konsultan">
+
+                    <ImageView
+                        android:id="@+id/pp_konsultan2"
+                        android:layout_width="102dp"
+                        android:layout_height="108dp"
+                        android:paddingHorizontal="7dp"
+                        android:src="@drawable/profile_picture_konsultan" />
+
+                    <TextView
+                        android:id="@+id/nama_konsultan2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="120dp"
+                        android:paddingTop="20dp"
+                        android:text="dr. Evlyn Rogger"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nama_profesi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:paddingStart="120dp"
+                        android:paddingTop="43dp"
+                        android:text="Nutrition Specialist" />
+
+                    <ImageView
+                        android:id="@+id/icon_hospital2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospital"
+                        android:paddingStart="120dp"
+                        android:paddingTop="78dp"/>
+
+                    <TextView
+                        android:id="@+id/nama_rs2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="143dp"
+                        android:paddingTop="77dp"
+                        android:text="AYSHA Hospital" />
+
+                    <ImageView
+                        android:id="@+id/status_available2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/available"
+                        android:paddingStart="260dp"
+                        android:paddingTop="74dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/profile_konsultan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_konsultan2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@drawable/rectangle_list_konsultan">
+
+                    <ImageView
+                        android:id="@+id/pp_konsultan3"
+                        android:layout_width="102dp"
+                        android:layout_height="108dp"
+                        android:paddingHorizontal="7dp"
+                        android:src="@drawable/profile_picture_konsultan" />
+
+                    <TextView
+                        android:id="@+id/nama_konsultan3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="120dp"
+                        android:paddingTop="20sp"
+                        android:text="dr. Evlyn Rogger"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nama_profesi3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:paddingStart="120dp"
+                        android:paddingTop="43dp"
+                        android:text="Nutrition Specialist" />
+
+                    <ImageView
+                        android:id="@+id/icon_hospital3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospital"
+                        android:paddingStart="120dp"
+                        android:paddingTop="78dp"/>
+
+                    <TextView
+                        android:id="@+id/nama_rs3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="143dp"
+                        android:paddingTop="77dp"
+                        android:text="AYSHA Hospital" />
+
+                    <ImageView
+                        android:id="@+id/status_available3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/available"
+                        android:paddingStart="260dp"
+                        android:paddingTop="74dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/profile_konsultan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_konsultan2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@drawable/rectangle_list_konsultan">
+
+                    <ImageView
+                        android:id="@+id/pp_konsultan4"
+                        android:layout_width="102dp"
+                        android:layout_height="108dp"
+                        android:paddingHorizontal="7dp"
+                        android:src="@drawable/profile_picture_konsultan" />
+
+                    <TextView
+                        android:id="@+id/nama_konsultan4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="120dp"
+                        android:paddingTop="20sp"
+                        android:text="dr. Evlyn Rogger"
+                        android:textSize="16dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nama_profesi4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:paddingStart="120dp"
+                        android:paddingTop="43dp"
+                        android:text="Nutrition Specialist" />
+
+                    <ImageView
+                        android:id="@+id/icon_hospital4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospital"
+                        android:paddingStart="120dp"
+                        android:paddingTop="78dp"/>
+
+                    <TextView
+                        android:id="@+id/nama_rs4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="143dp"
+                        android:paddingTop="77dp"
+                        android:text="AYSHA Hospital" />
+
+                    <ImageView
+                        android:id="@+id/status_available4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/available"
+                        android:paddingStart="260dp"
+                        android:paddingTop="74dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/profile_konsultan5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_konsultan2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@drawable/rectangle_list_konsultan">
+
+                    <ImageView
+                        android:id="@+id/pp_konsultan5"
+                        android:layout_width="102dp"
+                        android:layout_height="108dp"
+                        android:paddingHorizontal="7dp"
+                        android:src="@drawable/profile_picture_konsultan" />
+
+                    <TextView
+                        android:id="@+id/nama_konsultan5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingStart="120dp"
+                        android:paddingTop="20sp"
+                        android:text="dr. Evlyn Rogger"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/nama_profesi5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:paddingStart="120dp"
+                        android:paddingTop="43dp"
+                        android:text="Nutrition Specialist" />
+
+                    <ImageView
+                        android:id="@+id/icon_hospital5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospital"
+                        android:paddingStart="120dp"
+                        android:paddingTop="78dp"/>
+
+                    <TextView
+                        android:id="@+id/nama_rs5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:paddingStart="143dp"
+                        android:paddingTop="77dp"
+                        android:text="AYSHA Hospital" />
+
+                    <ImageView
+                        android:id="@+id/status_available5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/available"
+                        android:paddingStart="260dp"
+                        android:paddingTop="74dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
