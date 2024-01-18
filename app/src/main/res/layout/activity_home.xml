@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/backg_home">
+
+    <ImageView
+        android:id="@+id/logotype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_type"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logotype"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="35dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/halo_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Halo, Prasilda"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/icon_cek_stunting"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/icon_cek_stunting"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/halo_nama"/>
+
+                    <ImageView
+                        android:id="@+id/icon_belajar_gizi"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/icon_belajar_gizi"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/halo_nama"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageView
+                        android:id="@+id/icon_berbagi_ilmu"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/icon_berbagi_ilmu"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/icon_cek_stunting"/>
+
+                    <ImageView
+                        android:id="@+id/icon_konsultasi"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/icon_konsultasi"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/icon_belajar_gizi"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageView
+                        android:id="@+id/icon_pesan_produk"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/icon_pesan_produk"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/icon_berbagi_ilmu"/>
+
+                    <ImageView
+                        android:id="@+id/icon_indahnya_berbagi"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/icon_indahnya_berbagi"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/icon_konsultasi"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

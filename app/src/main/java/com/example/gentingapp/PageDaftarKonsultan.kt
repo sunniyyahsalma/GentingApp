@@ -22,7 +22,7 @@ class PageDaftarKonsultan : AppCompatActivity() {
         val profile_konsultan1 = findViewById<FrameLayout>(R.id.profile_konsultan1)
 
         profile_konsultan1.setOnClickListener {
-            Intent (this, PageProfilDanBookingKonsultan::class.java).also {
+            Intent(this, PageProfilDanBookingKonsultan::class.java).also {
                 startActivity(it)
             }
         }

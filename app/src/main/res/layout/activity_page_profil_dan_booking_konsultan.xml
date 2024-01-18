@@ -211,6 +211,7 @@
         android:layout_marginBottom="42dp"
         android:background="@drawable/rectangle_bottom_button"
         android:text="Book Now"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent" />

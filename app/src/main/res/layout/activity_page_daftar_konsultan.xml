@@ -89,6 +89,7 @@
                         android:textSize="11sp"
                         android:paddingStart="120dp"
                         android:paddingTop="43dp"
+                        android:textColor="@color/black"
                         android:text="Nutrition Specialist" />
 
                     <ImageView
@@ -156,6 +157,7 @@
                         android:textSize="11sp"
                         android:paddingStart="120dp"
                         android:paddingTop="43dp"
+                        android:textColor="@color/black"
                         android:text="Nutrition Specialist" />
 
                     <ImageView
@@ -223,6 +225,7 @@
                         android:textSize="11sp"
                         android:paddingStart="120dp"
                         android:paddingTop="43dp"
+                        android:textColor="@color/black"
                         android:text="Nutrition Specialist" />
 
                     <ImageView
@@ -290,6 +293,7 @@
                         android:textSize="11sp"
                         android:paddingStart="120dp"
                         android:paddingTop="43dp"
+                        android:textColor="@color/black"
                         android:text="Nutrition Specialist" />
 
                     <ImageView
@@ -357,6 +361,7 @@
                         android:textSize="11sp"
                         android:paddingStart="120dp"
                         android:paddingTop="43dp"
+                        android:textColor="@color/black"
                         android:text="Nutrition Specialist" />
 
                     <ImageView
@@ -424,6 +429,7 @@
                         android:textSize="11sp"
                         android:paddingStart="120dp"
                         android:paddingTop="43dp"
+                        android:textColor="@color/black"
                         android:text="Nutrition Specialist" />
 
                     <ImageView

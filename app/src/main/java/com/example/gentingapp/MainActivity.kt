@@ -1,46 +1,52 @@
 package com.example.gentingapp
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.gentingapp.ui.theme.GentingAppTheme
+import androidx.fragment.app.Fragment
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var meowBottomNavigation: MeowBottomNavigation;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            GentingAppTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+        setContentView(R.layout.activity_main)
+
+        val meowBottomNavigation = findViewById<MeowBottomNavigation>(R.id.bottom_nav)
+
+        //add item menu
+        meowBottomNavigation.add(MeowBottomNavigation.Model(1, R.drawable.home));
+        meowBottomNavigation.add(MeowBottomNavigation.Model(2, R.drawable.receipt));
+        meowBottomNavigation.add(MeowBottomNavigation.Model(3, R.drawable.user));
+
+
+        fun loadFragment(fragment: Fragment?) {
+            if (fragment != null) {
+                supportFragmentManager.beginTransaction().replace(R.id.frame_fragment, fragment).commit()
             }
+
         }
-    }
-}
+        meowBottomNavigation.setOnShowListener(MeowBottomNavigation.ShowListener (){
+            fun onShowItem(item: MeowBottomNavigation.Model ) {
+                var fragment: Fragment? = null
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+                when (item.id) {
+                    2 -> fragment = ReceiptFragment()
+                    3 -> fragment = ProfilFragment()
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    GentingAppTheme {
-        Greeting("Android")
+                }
+
+            loadFragment (fragment)
+
+
+
+
+
+                }
+
+        })
+
+
     }
 }

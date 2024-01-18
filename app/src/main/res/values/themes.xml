@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.GentingApp" parent="android:Theme.NoTitleBar" />
+    <style name="Theme.GentingApp" parent="Theme.MaterialComponents.Light.NoActionBar" >
+
+    </style>
+
+    <style name="buttonstyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/sky_blue</item>
+        <item name="colorButtonNormal">@color/sky_blue</item>
+    </style>
+
 </resources>

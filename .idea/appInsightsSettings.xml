@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.gentingapp" />
+                  <option name="mobileSdkAppId" value="1:1026430299646:android:0d1690a28107903108a4af" />
+                  <option name="projectId" value="gentingapp-chaarvi" />
+                  <option name="projectNumber" value="1026430299646" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

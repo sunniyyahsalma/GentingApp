@@ -288,6 +288,7 @@
         android:layout_marginHorizontal="70dp"
         android:textAllCaps="false"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:text="Confirm Payment"/>
 
 
