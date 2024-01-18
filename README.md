@@ -6,10 +6,12 @@ Aplikasi "GENTING" merupakan sebuah aplikasi yang memberikan layanan dan informa
 
 
 Halaman Login
+
 ![login](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/725595d8-e002-4e6f-b379-82e3a324be0c)
 
 
 Halaman SignUp
+
 ![sign up](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/bfcbb618-5ab1-4958-bcf4-cdcd5f91e85e)
 
 
@@ -19,18 +21,22 @@ Halaman Home
 
 FITUR KONSULTASI
 Halaman Daftar Ahli Gizi
+
 ![konsultasi](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/612a610f-fd35-43b4-bb67-3f75a413b5f6)
 
 
 Halaman Detail Profil Ahli Gizi
+
 ![detail ahli gizi](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/b2e1e2ff-5447-479a-92d5-f29310dc974e)
 
 
 Halaman Pembayaran 
+
 ![payment](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/fd484a2d-720f-46dc-b16f-2037bf05e445)
 
 
 Halaman Roomchat
+
 ![roomchat](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/08f8bdd3-54ea-4a45-bb85-c5306a8e69f9)
 
 
@@ -41,14 +47,4 @@ Halaman Roomchat
 
 
 
-
-
-
-![Daftar list konsultan](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/eff2b8d9-f802-4fae-beca-04d24b7ccf36)
-
-![Profil lengkap konsultan](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/fb5e4cbd-7479-4f68-b647-6d53be8cd681)
-
-![Pembayaran](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/ed558aee-4e51-4db2-a32c-d519645209ff)
-
-![Room chat](https://github.com/sunniyyahsalma/GentingApp/assets/127868500/64d77edf-7516-4897-a240-5e3f6e26f12c)
 
